@@ -1,0 +1,14 @@
+version: '3'
+services:
+  cardgame_server:
+    build: cardgame_server/
+    container_name: cardgame_server
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING.PROFILES.ACTIVE=default
+  cardgame_client:
+    build: cardgame_client/
+    container_name: cardgame_client
+    ports:
+      - "80:80"
