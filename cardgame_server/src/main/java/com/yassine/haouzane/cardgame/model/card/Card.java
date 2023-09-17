@@ -1,18 +1,6 @@
 package com.yassine.haouzane.cardgame.model.card;
 
-import lombok.Getter;
-
-public class Card implements Comparable<Card> {
-    @Getter
-    private final Type type;
-    @Getter
-    private final CardValue value;
-
-
-    public Card(Type type, CardValue value) {
-        this.type = type;
-        this.value = value;
-    }
+public record Card(Type type, CardValue value) implements Comparable<Card> {
 
     @Override
     public int compareTo(Card compared) {

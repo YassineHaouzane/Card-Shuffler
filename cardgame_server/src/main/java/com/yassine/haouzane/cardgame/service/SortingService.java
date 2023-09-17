@@ -15,8 +15,8 @@ public class SortingService {
         var shuffledTypes = new ArrayList<>(List.of(Type.values()));
         Collections.shuffle(shuffledTypes);
         return hand.stream()
-                .sorted((c1, c2) -> c1.getType() == c2.getType() ? c1.compareTo(c2)
-                        : shuffledTypes.indexOf(c1.getType()) - shuffledTypes.indexOf(c2.getType()))
+                .sorted((c1, c2) -> c1.type() == c2.type() ? c1.compareTo(c2)
+                        : shuffledTypes.indexOf(c1.type()) - shuffledTypes.indexOf(c2.type()))
                 .collect(Collectors.toList());
     }
 }
