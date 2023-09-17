@@ -1,10 +1,18 @@
 ## Project Setup
 
+### Requirements
+
+```
+node
+```
+
 ### Create a .env file with the following content
 
 ```
 VITE_APP_API_URI=http://localhost:8080
 ```
+
+Install dependencies
 
 ```sh
 npm install

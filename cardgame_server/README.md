@@ -1,5 +1,11 @@
 ## Setting up the project
 
+### Requirements
+
+```
+Java 17
+```
+
 ### Running the project
 
 ```sh
